@@ -16,7 +16,7 @@ class CustomAdapter(private val context: Context, private val data: List<Map<Str
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-        val view: View = convertView ?: inflater.inflate(R.layout.data_loop, parent, false)
+        val view: View = convertView ?: inflater.inflate(R.layout.grid_data_loop, parent, false)
 
         val textNama: TextView = view.findViewById(R.id.textNama)
         val textTelp: TextView = view.findViewById(R.id.textTelp)

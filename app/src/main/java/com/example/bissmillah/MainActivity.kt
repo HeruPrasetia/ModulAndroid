@@ -27,6 +27,13 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this@MainActivity, FormInput::class.java)
             startActivity(intent)
         })
+
+        val btnLoopData : Button = findViewById(R.id.btnLoopData)
+
+        btnLoopData.setOnClickListener(View.OnClickListener {
+            val intent = Intent(this@MainActivity, DataLoop::class.java)
+            startActivity(intent)
+        })
     }
 
     private fun showToast(message: String) {

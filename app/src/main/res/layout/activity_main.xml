@@ -34,6 +34,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Pindah Aktivity" />
+
+        <Button
+            android:id="@+id/btnLoopData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loop Data" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

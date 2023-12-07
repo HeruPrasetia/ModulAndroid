@@ -31,7 +31,12 @@ class FormInput : AppCompatActivity() {
             val Email : String = edtEmail.text.toString()
             val Pwd : String = edtPwd.text.toString()
             if (Email.isNotEmpty() && Pwd.isNotEmpty()) {
-                Toast.makeText(applicationContext, "Email adalah ${Email} Dan Password Adalah ${Pwd}", Toast.LENGTH_SHORT).show()
+                val intent = Intent(this, FormProses::class.java)
+//                Untuk mengirim value ke intens
+                intent.putExtra("Email", Email)
+                intent.putExtra("Pwd", Pwd)
+
+                startActivity(intent)
             } else {
                 if (Email.isEmpty()) {
                     tilEmail.error = "Email harus diisi"

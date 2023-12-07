@@ -13,6 +13,12 @@
         android:theme="@style/Theme.Bissmillah"
         tools:targetApi="31">
         <activity
+            android:name=".DataLoop"
+            android:exported="false" />
+        <activity
+            android:name=".FormProses"
+            android:exported="false" />
+        <activity
             android:name=".FormInput"
             android:exported="false" />
         <activity

@@ -33,13 +33,22 @@
             android:id="@+id/btnPindahActivity"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/success"
             android:text="Pindah Aktivity" />
 
         <Button
             android:id="@+id/btnLoopData"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/primary"
             android:text="Loop Data" />
+
+        <Button
+            android:id="@+id/btnKumpulanProject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/warning"
+            android:text="Kumpulan Project Kecil" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

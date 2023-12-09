@@ -1,10 +1,10 @@
 package com.example.bissmillah
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 
 class AppTasbih : AppCompatActivity() {
     var CT:Int = 0
@@ -14,9 +14,9 @@ class AppTasbih : AppCompatActivity() {
 
         val btnTasbih : Button = findViewById(R.id.btnTasbih)
         val edtJumlah : TextView = findViewById(R.id.edtJumlah)
-        val Jumlah:String = edtJumlah.text.toString()
 
         btnTasbih.setOnClickListener(View.OnClickListener {
+            val Jumlah:String = edtJumlah.text.toString()
             if(Jumlah == "") {
                 CT++
                 btnTasbih.text = CT.toString()
